@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "jsxSingleQuote": true,
+    "arrowParens": "avoid"
+  },
   "scripts": {
     "dev": "concurrently \"npm run server:start\" \"npm run start --prefix ../client",
     "server:start": "nodemon index.js"
